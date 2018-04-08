@@ -8,8 +8,8 @@ two files: 20groups_bag_of_words.csv (containing mapping from number of document
 in particular document) and 20groups_word_mapping.csv (containing mapping from a word to a key used in 20groups_bag_of_words.csv)
 
 The MNIST dataset was transformed as follows:
-Firsty calculated nearest neighbours graph(k=20) - mnist_knn_*.csv, 
-then calculated degrees of nodes in the graph (files mnist_knn_*_counts.csv)
+Firsty calculated nearest neighbours graph(k=20) - mnist_knn_1000.csv, mnist_knn_10000.csv,
+then calculated degrees of nodes in the graph (files mnist_knn_1000_counts.csv, mnist_knn_10000_counts.csv)
 then performed PCA, keeping 30 most relevant components and then applied TSNe keeping three components, saving the results
-to mnist_*.csv files
+to mnist_1000.csv, mnist_10000.csv files
 
